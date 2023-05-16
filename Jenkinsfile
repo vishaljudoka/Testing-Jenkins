@@ -1,7 +1,11 @@
 pipeline {
 
     agent any
-	environment { server_cred=credentials('servercred')}
+	environment 
+		{ 
+		server_cred=credentials('servercred')
+		}
+	stages
     {
         stage ("Build") { 
             steps
