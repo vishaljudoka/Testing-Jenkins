@@ -13,8 +13,8 @@ pipeline {
                 echo 'Building the application1'
 				withCredentials([usernamePassword(credentialsId: 'servercred', passwordVariable: 'passw', usernameVariable: 'user')])
 				{
-						echo ${user}
-						echo ${passw}
+						echo "${user}"
+						echo "${passw}"
 						}
             }
 
