@@ -11,7 +11,11 @@ pipeline {
             steps
             {
                 echo 'Building the application1'
-				echo $server_cred
+				withCredentials([usernamePassword(credentialsId: 'servercred', passwordVariable: passw, usernameVariable:user)]) 
+				{
+						echo $user
+						echo $passw
+						}
             }
 
          }
