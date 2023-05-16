@@ -21,7 +21,7 @@ pipeline {
 
         }
 
-        stage ("deploy"){ "deploy"
+        stage ("deploy"){
 
             steps
              {
