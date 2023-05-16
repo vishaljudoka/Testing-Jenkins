@@ -9,7 +9,7 @@ pipeline {
 		}
 		parameters {
 			string ( name="JenkinPipeline-Declarative" , defaultvalue= "JenkinPipeline-Declarative 1.0" , description="JenkinPipeline-Declarative" )
-			choice ( name="version" , choices : [1.1.0 , 1.1.1 , 1.1.2 ], description="version build number" )
+			choice ( name="version" , choices : ['1.1.0' , '1.1.1' , '1.1.2' ], description="version build number" )
 			booleanParam ( name = "executeTests" , defaultvalue= true , description="execute test" )
 	stages
     {
