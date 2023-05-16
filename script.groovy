@@ -10,7 +10,7 @@ def testApp()
 def deployApp() 
 	{
 	echo 'Deploying the applic]ation1'
-	echo ' Deploying vesrion ${params.version}
+	echo ' Deploying vesrion ${params.version} '
 	}
 	
 return this
