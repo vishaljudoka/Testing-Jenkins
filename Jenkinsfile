@@ -1,13 +1,13 @@
 pipeline {
 
     agent any
-
-    stages
+	environment { server_cred=credentials('servercred')}
     {
         stage ("Build") { 
             steps
             {
                 echo 'Building the application1'
+				echo $server_cred
             }
 
          }
